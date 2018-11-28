@@ -17,7 +17,7 @@
 	Comments:The flag -v returns results that are not equal to the char/String we pass in.\
 6. egrep -i [a-z|-]\{14,\} cities.txt\
 	Comments: The query uses egrep to pull all the values of cities.txt that have a letter between A and Z, and then filter the result to those which have at least 14 characters. The -i flag is added to ensure results are all-encompassing, and the vertical bar "|" is added to increase readbility.\
-7. grep -n ^B cities.txt |wc -l \
+7. grep -n ^B cities.txt |wc -o \
 	Comment: Take all the words that start with B, pipe the results to get the number of lines.\
 8. grep ".dd" cities.txt | wc -l\
 	Comment: This doesn't return all 88 of the results intended. The results consist of all the occurrances \
